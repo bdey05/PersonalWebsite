@@ -1,19 +1,33 @@
 *{
     margin: 0;
     padding: 0;
-    color: #C5C6C7;
+    color: #BFC0C0;
     font-size: 20px;
     font-family: 'Archivo', sans-serif;
+    
 }
 
 body, html{
     background: #0B0C10;
     overflow-x: hidden;
+    
+   
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav img{
+  width: 105px;
+  height: 60px;
 }
  
 
  #logo, .nav-item{
-    color: #C5C6C7;
+    color: #BFC0C0;
  }
 
 
@@ -34,45 +48,43 @@ body, html{
 }
 
 
-.nav-item{
+
+
+  .nav-item:hover{
+    color: #68FDF3;
+    transition: 0.3s ease;
+  }
+  .nav-item{
     position: relative;
-    padding:0;
-    margin: 0;
-    padding-bottom: 5px;
-    
-    
-}
-
-
-.nav-item::before {
+  }
+  .nav-item::before{
     content: "";
     position: absolute;
-    display: block;
     width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #66FCF1;
+    background-color: #68FDF3;
+    visibility: hidden;
     transform: scaleX(0);
-    transition: transform 0.4s ease;
-  }
-  
-  .nav-item:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .nav-item:hover{
-    color: #66FCF1;
-    transition: 0.4s ease;
-  }
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
 
   .navbar-toggler a{
-      color: white;
-      background-color: white;
+      color: #BFC0C0;
+      background-color: #BFC0C0;
   }
 
 .navbar-toggler-icon{
-    color: white;
+    color: #BFC0C0;
     
 }
 
@@ -93,7 +105,7 @@ body, html{
  
 
  #updateText{
-   color: #66FCF1;
+   color: #68FDF3;
  }
 
 @media (max-width: 1024px) {
@@ -145,7 +157,7 @@ body, html{
   
 
   .links li a{
-    color: #C5C6C7;
+    color: #BFC0C0;
     font-size: 20px;
   }
   .links ul{
@@ -159,7 +171,7 @@ body, html{
   
 
   .links li a:hover{
-      color: #66FCF1;
+      color: #68FDF3;
       transition: 0.4s ease;
       text-decoration: none;
   }
@@ -171,50 +183,110 @@ body, html{
 
 .icons a i{
     border-radius: 50%;
-    background-color: #45A29E;
+    background-color: #459D99;
     margin: 5px;
     padding: 10px;
-    color: #0B0C10;
+    color: #0F1015;
 }
 
 .icons a i:hover{
-    background-color: #66FCF1;
+    background-color: #68FDF3;
     transition: 0.4s ease;
 }
  
 
 .aboutme{
     display: flex;
-    margin-top: 30px;
-    width: 1400px;
+    margin-top: 50px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    margin-bottom: 50px;
+    gap: 0px;
+
+  }
+
+
+  
+  
+
+  .blob{
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    background: #68FDF3;
+    animation: move 7s linear infinite;
+  }
+
+  @keyframes move{
+    0%, 100%{
+      
+      border-radius: 67% 33% 60% 40% / 41% 44% 56% 59%;
+    }
+    25%{
+      
+      border-radius: 53% 47% 32% 68% / 42% 71% 29% 58%;
+    }
+    50%{
+     
+      border-radius: 58% 42% 66% 34% / 36% 46% 54% 64%;
+    }
+    75%{
+    
+      border-radius: 76% 24% 63% 37% / 52% 71% 29% 48%; 
+    }
+  }
+
+
+  .blob-container{
+    position: relative;
+    right: 200px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
-  .rightimg{
-    width: 100%;
-    height: 100%;
+
+  .blob-container img, .blob{
+    position: absolute;
   }
+
+  .blob-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
   
-  .rightimg img{
-    width: 700px;
-    height: 100%;
-    filter: grayscale(100%);
+  }
+
+
+
+
+
+  .lefttxt{
+    width: 100%;
   }
   
   .lefttxt h2{
-    font-size: 105px;
-    color: #66FCF1;
+    font-size: 65px;
+    color: #BFC0C0;
+    position: relative;
   }
   
+  .lefttxt span{
+    display: none;
+    font-size: 65px;
+    color: #68FDF3;
+     
+  }
+
+
   .lefttxt p{
     font-size: 23px;
     text-align: justify;
     line-height: 1.3;
+    margin-top: 20px;
   }
   
   @media (max-width: 1024px) {
@@ -239,10 +311,15 @@ body, html{
       width: 500px;
     }
   
-    .lefttxt h2{
+    .lefttxt h2, span{
       font-size: 40px;
     }
   
+    span{
+     
+      font-size: 40px !important;
+    }
+
     .lefttxt p{
       font-size: 17px;
       width: 300px;
@@ -276,6 +353,27 @@ body, html{
   }
 
 
+/*custom scrollbar*/
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #BFC0C0;
+  border-radius: 15px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1b5b9;
+  
+}
   
 
   

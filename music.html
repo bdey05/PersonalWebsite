@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="music.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head> 
+<body class="d-flex flex-column min-vh-100" onload = "getText()">
+    <nav class="navbar navbar-expand-lg">
+        <a href = "index.html" id = "logo"><img src = "finallogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDropdown">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="music.html">Music</a>
+            <a class="nav-item nav-link" href="sports.html">Sports</a>
+          </div>
+        </div>
+      </nav>
+
+
+     
+
+
+      <div class="wrapper flex-grow-1">
+        <div class = "text">
+            <h2>Music</h2>
+            <p>Scroll down and find out about my favorite artists</p>
+          </div>
+        <div class="vince">
+            <div class="name">
+              <div class="artistinfo">
+                <h2>Vince Staples</h2>
+                <p>I like Vince Staples because he incorporates different music styles into his music and he has good lyricism. His flow is unique and he is a very genuine person. </p>
+              </div>
+              <div class="artimg">
+              <img onclick="getColor1()" id='vinceS' src="https://thefader-res.cloudinary.com/private_images/w_640,c_limit,f_auto,q_auto:eco/F100_WHITE_RAPPERS_WELSH_02_zq9s0s_ly9itu/vince-staples-on-basketball-is-always-the-best.jpg" alt="">
+              </div>
+            </div>
+            <div class = "container">
+              <h2 id="fav">Favorite Work</h2>
+            <div class="row">
+              <div class = "col-md-4">
+                  <div class="card">
+
+                        <h2>Summertime '06</h2>
+                        <p>Release Date: June 30, 2015</p>
+                        <iframe src="https://open.spotify.com/embed/album/4Csoz10NhNJOrCTUoPBdUD" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    
+              </div>
+              </div>
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>Big Fish Theory</h2>
+                        <p>Release Date: June 23, 2017</p>
+              
+                        <iframe src="https://open.spotify.com/embed/album/5h3WJG0aZjNOrayFu3MhCS" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     
+
+                  </div>
+              </div>
+             
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>Vince Staples</h2>
+                        <p>Release Date: July 9, 2021</p>
+                       
+                     
+                        <iframe src="https://open.spotify.com/embed/album/2suR5CCbtL2Wq8ShFo8rFr" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      
+                   
+              </div>
+              
+            </div>
+            </div>
+        </div>
+        </div>
+       
+        <div class="freddie">
+           <div class="name">
+              <div class="artistinfo">
+                <h2>Conway The Machine</h2>
+                <p>I like Conway The Machine because his style is very grimey and methodical. Also, his music is authentic and he never creates a song for mainstream appeal.</p>
+              </div>
+              <div class="artimg">
+              <img onclick = 'getColor2()' id = 'conway' src="https://cdn.vox-cdn.com/thumbor/-MfTEIGhnG4TWLEutXpex7xyhic=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22195623/200330_Conway_The_Machine_getty_800x600.jpg" alt="">
+              </div>
+            </div>
+            <div class = "container">
+              <h2 id="fav">Favorite Work</h2>
+            <div class="row">
+              <div class = "col-md-4">
+                  <div class="card">
+
+                        <h2>Reject 2</h2>
+                        <p>Release Date: October 30, 2015</p>
+                        <iframe src="https://open.spotify.com/embed/album/0bwlrhBRjtqdy4eTlfg2UD" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    
+              </div>
+              </div>
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>Blakk Tape</h2>
+                        <p>Release Date: March 27, 2018</p>
+              
+                        <iframe src="https://open.spotify.com/embed/album/5j8D8IJ1TZKJy869LGWgjf" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     
+
+                  </div>
+              </div>
+             
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>La Maquina</h2>
+                        <p>Release Date: April 16, 2021</p>
+                       
+                     
+                        <iframe src="https://open.spotify.com/embed/album/35C2QYq4OgkEXETksStyzz" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      
+                   
+              </div>
+              
+            </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="school">
+             <div class="name">
+              <div class="artistinfo">
+                <h2>Benny The Butcher</h2>
+                <p>I like Benny The Butcher because of his aggressive, gritty style. His style is similar to 90s boom bap but he incorporates modern beats, making his music refreshing to listen to.</p>
+              </div>
+              <div class="artimg">
+              <img onclick='getColor3()' id='benny' src="https://cdn.vox-cdn.com/thumbor/f_8pGc4JdBoviJfbJrXB4RSOch4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20070904/benny_the_butcher_getty_gilbert_carrasquillo.jpg" alt="">
+              </div>
+            </div>
+            <div class = "container">
+              <h2 id="fav">Favorite Work</h2>
+            <div class="row">
+              <div class = "col-md-4">
+                  <div class="card">
+
+                        <h2>Tana Talk 3</h2>
+                        <p>Release Date: November 23, 2018</p>
+                       <iframe src="https://open.spotify.com/embed/album/5OsHMGOg6lRV9REoVxbcWA" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              </div>
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>The Plugs I Met</h2>
+                        <p>Release Date: June 21, 2019</p>
+              
+                        <iframe src="https://open.spotify.com/embed/album/5So31JibrTO74WvuCozsAb" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     
+
+                  </div>
+              </div>
+             
+               <div class = "col-md-4">
+                  <div class="card">
+                    
+                        <h2>Burden Of Proof</h2>
+                        <p>Release Date: October 16, 2020</p>
+                       
+                     
+                        <iframe src="https://open.spotify.com/embed/album/6xlQNGdro3cCcn8v1ZEGm3" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      
+                   
+              </div>
+              
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+        <footer class = "footer">
+        <div class = "icons">
+            <a href = 'mailto: bipradey05@gmail.com'><i class="far fa-envelope"></i></a>
+            <a href = 'https://www.linkedin.com/in/bipra-dey-6981511b8/'><i class="fab fa-linkedin-in"></i></a>
+            
+          </div>
+          <div class = "links">
+            made by Bipra Dey, ©2021
+          </div>
+      </footer>
+      <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+<script src="script.js"></script>
+</html>

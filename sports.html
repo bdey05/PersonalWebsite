@@ -6,63 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="sports.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 
 </head> 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" onload = "getText()">
     <nav class="navbar navbar-expand-lg">
-        <a href = "#" href = # onclick = "getTextColor()" id = "logo">BD</a>
+        <a href = "index.html" id = "logo"><img src = "finallogo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarDropdown">
           <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="music.html">Music</a>
             <a class="nav-item nav-link" href="sports.html">Sports</a>
-            <a class="nav-item nav-link" href="#">Shows</a>
-            <a class="nav-item nav-link" href="#">Music</a>
-            <a class="nav-item nav-link" href="#">Hobbies</a>
           </div>
         </div>
       </nav>
 
+     
+
+
       <div class="wrapper flex-grow-1">
-          <div class = "sports">
-            <div class = "topTxt">
-            <h2 class = "text-center" id = "type">Sports</h2>
-            </div>
-
-            <!-- 
-              Soccer
-              (favorite players, favorite teams)
-              Basketball
-              (favorite players, favorite teams)
-
-            -->
+         <div class = "text">
+            <h2>Sports</h2>
+            <p>Hover over the images and find out about my favorite sports</p>
           </div>
+          <div class="soccer">
+            <h2>Soccer</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Why I like soccer</h2>
+                        <img src="soccer.svg">
+                      </div>
+                      <div class="card-back">
+                        
+                        <p>My family would always watch and play soccer while I was growing up. This developed my interest in soccer and I still enjoy watching it today even if I don't play it as much.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Team</h2>
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png" class="py-4">
+                      </div>
+                      <div class="card-back">
+        
+                        <p>My favorite team is Barcelona since my dad supports them and we used to watch all their games while I was growing up. I still watch them play today.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Player</h2>
+                        <img src="leo.png">
+                      </div>
+                      <div class="card-back">
+                        <p>My favorite player is Lionel Messi because his playstyle is very fun to watch.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basketball">
+            <h2>Basketball</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Why I like basketball</h2>
+                        <img src="basketball.svg">
+                      </div>
+                      <div class="card-back">
+                        
+                        <p>I started playing basketball with my friends in middle school during gym class and found it very fun. I still continue to play and I regularly follow the NBA.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Team</h2>
+                        <img src="https://cdn.freebiesupply.com/images/thumbs/2x/milwaukee-bucks-logo.png">
+                      </div>
+                      <div class="card-back">
+        
+                        <p>My favorite team is the Milwaukee Bucks. I originally became a fan of them because of Giannis since he is my favorite player but I continue to be a fan of the team due to their gritty playstyle.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Player</h2>
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032977.png&w=350&h=254"">
+                      </div>
+                      <div class="card-back">
+                        <p>My favorite player is Giannis Antetokounmpo because he plays with a lot of effort on the court on both the offensive and defensive ends. His work ethic and humility is also very inspirational.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="powerlift">
+            <h2>Powerlifting</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Why I like powerlifting</h2>
+                        <img src="weight.svg">
+                      </div>
+                      <div class="card-back">
+                        
+                        <p>I discovered powerlifting through YouTube videos when I first started working out in the gym in the summer before my freshman year of high school. I became fascinated with the sport and since then have followed a powerlifting plan in the gym.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Powerlifter</h2>
+                        <img src="russ.png">
+                      </div>
+                      <div class="card-back">
+                        <p>My favorite powerlifer is Russel Orhii as he is a very positive and motivating person. I found him through YouTube when I first started powerlifting and found his content to be very useful.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-front">
+                        <h2>Favorite Lift</h2>
+                        <img src="eleiko.png" class="px-3">
+                      </div>
+                      <div class="card-back">
+                        
+                        <p>My favorite lift in powerlifting is the squat because it is a fun movement to do and my most consistent lift.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
       </div>
 
 
-      <footer class = "footer">
+       <footer class = "footer">
         <div class = "icons">
-            <a href = #><i class="far fa-envelope"></i></a>
-            <a href = #><i class="fab fa-linkedin-in"></i></a>
-            <a href = #><i class="fab fa-instagram"></i></a>
+            <a href = 'mailto: bipradey05@gmail.com'><i class="far fa-envelope"></i></a>
+            <a href = 'https://www.linkedin.com/in/bipra-dey-6981511b8/'><i class="fab fa-linkedin-in"></i></a>
+          
           </div>
           <div class = "links">
-            <ul>
-              <li><a href = #>Sports</a></li>
-              <div class = "slash">/</div>
-              <li><a href = #>Shows</a></li>
-              <div class = "slash">/</div>
-              <li><a href = #>Music</a></li>
-              <div class = "slash">/</div>
-              <li><a href = #>Hobbies</a></li>
-            </ul>
+            made by Bipra Dey, ©2021
           </div>
       </footer>
 
@@ -74,7 +214,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script src = "script.js"></script>
 </body>
+
+
+<script src="script.js"></script>
 </html>

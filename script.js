@@ -1,5 +1,5 @@
 
-
+//Typewriter
 var index = 0;
 var text = 'Welcome To My Site!';
 
@@ -13,11 +13,31 @@ function getText() {
 }
 
 
-function getColor(){
-  document.getElementById('pic').style.filter = "grayscale(0%)";
+//Word rotation
+var words = document.getElementById('text').getElementsByTagName('span');
+
+var i = 0;
+
+function rotator(){
+  words[i].style.display = 'none';
+  i = (i+1) % words.length;
+  words[i].style.display = 'inline';
 }
 
+setInterval(rotator, 1400);
 
-function getTextColor(){
-  document.getElementById('logo').style.color = "#66FCF1";
+
+
+//grayscale color effect
+function getColor1(){
+  document.getElementById("vinceS").style.filter = "grayscale(0%)";
 }
+
+function getColor2(){
+  document.getElementById("conway").style.filter = "grayscale(0%)";
+}
+
+function getColor3(){
+  document.getElementById("benny").style.filter = "grayscale(0%)";
+}
+

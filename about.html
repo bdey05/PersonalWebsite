@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="about.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 
 </head> 
-<body class="d-flex flex-column min-vh-100" onload = "getText()">
-    <nav class="navbar navbar-expand-lg">
+<body class="d-flex flex-column min-vh-100">
+   <nav class="navbar navbar-expand-lg">
         <a href = "index.html" id = "logo"><img src = "finallogo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -30,34 +30,53 @@
         </div>
       </nav>
 
-      <h2 class = "text-center" id = "updateText"></h2>
 
-
-      <div class="wrapper flex-grow-1" onload = "rotator()">
-        <div class = "aboutme">
-            <div class = "lefttxt">
-                <h2>Hello!</h2>
-                <h2 id = "text"">I'm
-                <span style = "display: inline;">Bipra</span>
-                <span>A Powerlifter</span>
-                <span>A Coder</span>
-                <span>Curious</span>
-                <p>View More About Me Using The Navbar Links!</p></h2>
-            </div>
-            <div class = "blob-container">
-            <div class="blob"></div>
-            <img src = "headshot.jpg">
-            </div>
-  
+      <div class="wrapper flex-grow-1">
+          <div class = "text">
+            <h2>About</h2>
+            <p>Scroll down and read about me</p>
           </div>
+          <div class = "boxes">
+          <div class="box1">
+            <p>My name is Bipra Dey and I am Bengali. I am a 17 year old rising senior at the Bronx High School of Science. I can speak Bengali, English, and a bit of Spanish.</p>
+            <div class="cartoonImg">
+              <img src = "school.svg">
+            </div>
+          </div>
+          <div class="box1">
+            <div class="cartoonImg">
+              <img src = "music1.svg">
+            </div>
+            <p>I love listening to music in my free time. I'm a big fan of Hip hop music and it helps me de-stress. Click the music link in the navbar to learn more about my favorite music.</p>
+          </div>
+          <div class="box1">
+            <p>I am also interested in fitness and sports. My favorite sports are soccer, basketball, and powerlifting. I frequently workout at the gym which helps me destress and stay in shape. Click on the sports link in the navbar to learn more about my favorite sports. </p>
+            <div class="cartoonImg">
+              <img src = "gym.svg">
+            </div>
+    
+          </div>
+          <div class="box1">
+            <div class="cartoonImg">
+              <img src = "web.svg">
+            </div>
+            <p>Lastly, I enjoy programming. I am experienced in frontend development and have helped create websites before for both a non-profit I am in known as Finxerunt and my school's hackathon known as AtomHacks. In the future, I would like to learn backend development.</p>
+          
+          </div>
+
+
+          </div>
+
+
+
       </div>
 
 
-       <footer class = "footer">
+      <footer class = "footer">
         <div class = "icons">
             <a href = 'mailto: bipradey05@gmail.com'><i class="far fa-envelope"></i></a>
             <a href = 'https://www.linkedin.com/in/bipra-dey-6981511b8/'><i class="fab fa-linkedin-in"></i></a>
-          
+  
           </div>
           <div class = "links">
             made by Bipra Dey, ©2021
@@ -72,8 +91,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src = "script.js"></script>
 </body>
-
-
-<script src="script.js"></script>
 </html>
